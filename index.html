@@ -1,0 +1,699 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+<title>Museum</title>
+	<style>
+		
+		.header{position: relative;
+				/*border: solid 1px red;*/
+				width: 1920px;
+				height:200px;
+				background-color: #030303}
+		
+		.logo{position: absolute;
+			 /*border: solid 1px red;*/
+			  text-align: center;
+			  width: 195px;
+			  height: 50px;
+			  left: 240px;
+			  top: 75px;
+			  display: inline-block;
+			  font-family:forum;
+			  font-style: normal;
+			  font-size: 28px;
+			  line-height: 50px;
+			  letter-spacing: 5px;
+			  text-transform: uppercase;
+			  color: #ffffff}
+		.logo:hover {color:#9d8665}
+		
+		.nav{position: absolute;
+			/*border: solid 1px red;*/
+			/*display: inline-block;*/
+			display: flex;
+  		 	justify-content: space-between;
+  			align-items: center;
+			width: 720px;
+			height: 50px;
+			right: 240px;
+			top: 75px;
+			text-align: center;
+			/*float: right;*/
+			/*margin-right: 30px;
+			  margin-left: 30px;*/
+			font-family:roboto;
+			font-size: 22px;
+			font-style: normal;
+			font-weight: 200;
+			line-height: 50px;
+			letter-spacing: 2px;
+			color: #ffffff}
+		/*.sp{
+			margin-left: 20px;
+			margin-right: 20px}*/
+		
+		.page-welcome{position: relative;
+				/*border: solid 1px red;*/
+				max-width: 1920px;
+				height: 750px}
+		
+		.background{position: absolute;
+				 	/*border: solid 1px red;*/
+					float: right;
+					width: 1215px;
+					height: 750px;
+					left: 705px;
+					background: url("1/background.jpg")}
+		
+		
+		.welcome{position: absolute;
+				 /*border: solid 1px red;*/
+				 background: none;
+				 color: #ffffff;
+				 width: 598px;
+				 height: 390px;
+				 left: 240px;
+				 top: auto;
+				 bottom: auto}
+		
+		.backwelcome{width: 705px;
+					 height: 750px;
+					 float: left;
+					 background: #000000}
+		
+		.button {width: 360px;
+				 height: 75px;
+				 top: 315px;
+				 background: #710707;
+				 border: none;
+				 border-radius: 10px;
+				 font-family: roboto;
+				 font-style: normal;
+				 font-weight: 200px;
+				 font-size: 22px;
+				 line-height: 26px;
+				 letter-spacing: 2px;
+				 color: #ffffff;
+				 cursor: pointer;}
+		.button:hover{background-color: #9d8665}
+		
+		
+		.whitepage {position: relative;
+					background: #ffffff;
+					width: 1920px;
+					height: 950px}
+		.blackpage {position: relative;
+					background: #000000;
+					width: 1920px;
+					height: 950px}
+		
+		
+		.virtualtourpage {position: relative;
+					background-color: #ffffff;
+					width: 1920px;
+					height: 1350px}
+		
+		.virtualtour {position: relative;
+					  top: 75px; /*correct*/
+					  bottom: 75px;
+					  left: 240px;
+					  right: 240px;
+					  max-width: 1440px;
+					  font-family: forum;
+					  font-size: 80px;
+					  line-height: 90px;
+					  letter-spacing: 5px;
+					  text-transform: uppercase;
+					  color: #9d8665;
+					  background-color: #ffffff}
+		
+		.mainline {position:relative;
+			   height:3px;
+			   max-width:1440px;
+			   background-color:#710707;
+			   margin-top: 25px;
+			   margin-bottom: 75px}
+		
+		.smallline {position: relative;
+					width: 300px;
+					height: 2px;
+					background-color:#710707;
+					margin-top: -9px;
+					margin-bottom: 9px;
+					cursor:pointer;
+					transition:transform 2s}
+		.smallline:hover {transform:scale(0.5) translate(100%)}
+		
+		.rectangle {position: relative;
+					display: inline-block;
+					margin: auto;
+					width: 440px;
+					height: 422px;
+					cursor: pointer}
+		
+		
+		.text  {font-family: forum;
+				font-size: 32px;
+				color: #000000;
+				line-height: 35px;
+				letter-spacing: 5px;
+				text-transform: uppercase}
+		
+		.secondtext {font-family:Roboto;
+					font-size: 22px;
+					line-height: 26px;
+					color: #000000;
+					text-transform: capitalize}
+		
+		.thirdtext {font-family:Roboto;
+					font-size: 18px;
+					line-height: 21px;
+					color: #000000;
+					text-transform: capitalize}
+		
+		.pictureexplore {position: relative;
+						top: 75px;
+						bottom: 75px;
+					  	left: 240px;
+					  	right: 240px;
+					  	max-width: 1440px;
+					  	font-family: forum;
+					  	font-size: 80px;
+					  	line-height: 90px;
+					  	letter-spacing: 5px;
+					  	text-transform: none;
+					  	color: #ffffff;
+					  	background-color: #000000}
+		
+		.line {position:relative;
+			   height:3px;
+			   width:660px;
+			   background-color:#710707;
+			   margin-top: 25px;
+			   margin-bottom: 75px}
+		
+		.paragraph {position: relative;
+					/*border: solid 1px red;*/
+					width: 660px;
+					height: auto;
+					font-family:Roboto;
+					font-style: normal;
+					font-weight: 300;
+					font-size: 22px;
+					line-height: 38px;
+					color: #ffffff}
+		
+		 .pic {positon: absolute;
+			   /*border: solid 1px red;*/ 
+			   float: right;
+			   width: 720px;
+			   height: 700px;
+			   left: 720px;
+			   top: 15px;
+			   background: url("3/Rectangle.jpg") }
+		
+		.video {position: relative;
+				top: 75px;
+				bottom: 75px;
+				left: 240px;
+				right: 240px;
+				max-width: 1440px}
+		
+		.bigtext{position: absolute;
+					/*top: 40px;
+					bottom: 75px;*/
+				 font-family: forum;
+				 font-size: 80px;
+				 line-height: 90px;
+				 letter-spacing: 5px;
+				 text-transform: uppercase;
+				 color: #9d8665;
+				 background-color: #ffffff}
+		
+		.smalltext {position: absolute;
+					width: 720px;
+					height: 90px;
+					left: 720px;
+					/*top: 40px;
+					bottom: 75px;*/
+					font-family:Roboto;
+					font-weight: 300;
+					font-size: 22px;
+					line-height: 38px;
+					color: #000000;
+					display: flex;
+					align-items: center}
+		
+			.tickets {position: relative;
+					  top: 75px; /*correct*/
+					  bottom: 75px;
+					  left: 240px;
+					  right: 240px;
+					  max-width: 1440px;
+					  font-family: forum;
+					  font-size: 80px;
+					  line-height: 90px;
+					  letter-spacing: 5px;
+					  text-transform: none;
+					  color: #ffffff;
+					  background-color: #000000}
+		
+		.typetickets {position: relative;
+					 display: inline-block;
+					 /*border: solid 1px red;*/
+					 left: 60px;
+					 width: auto}
+		
+			.img {position: relative;
+			  	  float: left;
+				  display: inline-block;
+			 	  width: 720px;
+			  	  height: 550px}
+		
+		.textmiddle {font-family:Roboto;
+					 font-style: normal;
+					 font-weight: bold;
+					 font-size: 28px;
+					 line-height: 33px;
+					 letter-spacing: 1.65px;
+					 color: #ffffff}
+		
+		.textlittle {top: 25px;
+					 bottom:25px;
+					 font-family:Roboto;
+					 font-size: 22px;
+					 font-weight: 300px;
+					 font-style: normal;
+					 line-height: 26px;
+					 color: #ffffff}
+		
+		.radio:hover {cursor: pointer;
+					  color: #9d8665 }
+		
+		.check   {position: relative;
+				 height: 17px;
+				 width: 17px;
+				 border-radius: 50%;
+				 background-color: #ffffff}
+		
+		.amount {position: relative;
+				float: right;
+				display: inline-block;
+				/*border: solid 1px red;*/
+				width: 150px}
+		
+		.countersbox {position: relative;
+					 display: flex;
+  		 			 justify-content: space-between;
+  					 align-items: center;
+					  width: 150px;
+					  height: 50px;
+					  border:solid 3px #ffffff;
+					  box-sizing: border-box}
+		
+		.number {all: unset;
+  				 width: 5em;
+  				 text-align: center;
+				 font-family:Roboto;
+				 font-style: normal;
+				 font-size: 22px;
+				 line-height: 26px;
+				 color: #ffffff}
+		
+		.click {font-family:Roboto;
+				font-style: normal;
+				font-size: 32px;
+				line-height: 37px;
+				border: none;
+				color: #ffffff;
+				background-color: #000000;
+				cursor: pointer}
+		.click:hover {color:#9d8665}
+		
+		.buytext {position: absolute;
+				  left: 1265px;
+				  top: 585px;
+				  width: 175px;
+				  height: 50px;
+				border: none;
+				border-radius: 2px;
+				background-color: #ffffff;
+				  font-family: Roboto;
+				  font-size: 22px;
+				  font-weight: 300px;
+				  line-height: 26px;
+				  letter-spacing: 2px;
+				  text-align: center;
+				  color: #000000;
+				  cursor: pointer}
+		.buytext:hover{color:#9d8665}
+		
+		.contacts {position: relative;
+				      top: 75px; /*correct*/
+					  bottom: 75px;
+					  left: 240px;
+					  right: 240px;
+					  max-width: 1440px;
+					  font-family: forum;
+					  font-size: 80px;
+					  line-height: 90px;
+					  letter-spacing: 5px;
+					  text-transform: none;
+					  color: #9d8665;
+					  background-color: white}	
+		.map {position: relative;
+			 float: right;
+			 width: 960px;
+			 height: 620px}
+		
+		.maintextcontacts {font-family:Roboto;
+							font-size:28px;
+							line-height:33px;
+							font-weight:500;
+							color:black}
+		
+		.smalltextcontacts {font-family:Roboto;
+							font-size:22px;
+							line-height:26px;
+							font-weight:300;
+							color:black}
+		
+		.footerblack {position: relative;
+					width: 1920px;
+					height: 300px;
+					background: black}
+		
+		.footerpage {position: relative;
+					width: 1440px;
+					height: 150px}
+					
+		
+		.footnav {position: absolute;
+				  width: 366px;
+				  height: 150px;
+				  left: 580px;
+				  top: 75px;
+				  bottom: 75px;
+			display: flex;
+  		 	justify-content: space-between;
+  			align-items: center;
+				 font-family:roboto;
+				 font-size: 22px;
+				 font-style: normal;
+				 font-weight: 200;
+				 line-height: 50px;
+				 letter-spacing: 2px;
+				 color: white}
+		
+		.anchor {text-decoration: none;
+				 color: #ffffff;
+				 cursor: pointer}
+		.anchor:hover {color:#9d8665}
+		
+		.social {position: relative;
+				 left: 1344px;
+				 width: 336px;
+				 height: 48px;
+				 display: flex;
+				 justify-content: space-around;
+				 align-items: center
+				 }
+		.radius {position: relative;
+				 display: flex;
+				 justify-content: space-around;
+				 align-items: center;
+				 width: 48px;
+				 height: 48px;
+				 border: solid 1px #666666;
+				 box-sizing: border-box;
+				 filter: drop-shadow(0px 0px 0px #666666);
+				 border-radius: 50px}
+		.radius:hover {opacity:0.5;
+					   color: #ABABAB}
+	</style>
+</head>
+<body>
+	<header>
+		<a name="top"></a>
+		<div class="header">
+			<a href="#bottom" class="anchor">
+			<div class="logo">
+				<span><img src="1/Vector.svg" alt="Louvre Logo" style="width: 49px; height: 26px"></span>
+				<span>LOUVRE</span>
+			</div></a>
+		<div class="nav">
+			<a href="#visiting" class="anchor"><span>Visiting</span></a>
+			<a href="#explore" class="anchor"><span>Explore</span></a>
+			<a href="#video" class="anchor"><span>Video</span></a>
+			<a href="#tickets" class="anchor"><span>Tickets</span></a>
+			<a href="#contacts" class="anchor"><span>Contacts</span></a>
+		</div>
+		</div>	
+	</header>
+<main>
+	<a name="welcome"></a>
+	<section class="page-welcome">
+			<div class="background"></div>
+		<div class="backwelcome"></div>
+		<div class="welcome">
+		<p style="font-family: forum; font-size: 80px; line-height: 90px;letter-spacing: 5px; text-transform: uppercase">WELCOME</p>
+		<p style="font-family: forum; font-size: 80px; line-height: 90px;letter-spacing:5px; text-transform: uppercase">TO THE LOUVRE</p>
+		<p style="font-family: roboto; font-size: 28px; line-height: 33px;letter-spacing:2px">
+			From the castle to the museum</p>
+		<a href="https://www.google.com/maps/@48.8618159,2.3366818,3a,75y,81.55h,73.4t/data=!3m7!1e1!3m5!1sAF1QipOVxZQuSy3Bx9T_HpH_7FtBHDTXvI6SF-A10ocT!2e10!3e12!7i5472!8i2736" target="_blank">
+			<button class="button">Discover the Louvre</button>
+		</a>
+		</div>
+	</section>
+	
+<a name="visiting"></a>	
+<section class="virtualtourpage">
+	<div class="virtualtour">
+		VIRTUAL TOUR
+	<p class="mainline"></p>
+		
+	<div class="rectangle">
+	<a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815" target="_blank">
+	<img src="2/Rectangle.jpg" alt="Royal Palace" style="width: 440px; height: 285px">
+	</a>
+	<p class="text">ROYAL PALACE</p>
+	<p class="smallline"></p>
+	<p class="secondtext">360&deg Virtual Tour</p>
+	<p class="thirdtext">Google Street Panorama View</p>
+	</div>
+		
+		<div class="rectangle">
+		<a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_CwP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500" target="_blank">
+		<img src="2/Rectangle (1).jpg" alt="Denon Wing" style="width: 440px; height: 285px">
+		</a>
+		<p class="text">DENON WING</p>
+		<p class="smallline"></p>
+		<p class="secondtext">360&deg Virtual Tour</p>
+		<p class="thirdtext">Google Street Panorama View</p>
+		</div>
+		
+	<div class="rectangle">
+		<a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120" target="_blank">
+		<img src="2/Rectangle (2).jpg" alt="Colonnade Perrault" style="width: 440px; height: 285px">
+		</a>
+		<p class="text">COLONNADE PERRAULT</p>
+		<p class="smallline"></p>
+		<p class="secondtext">360&deg Virtual Tour</p>
+		<p class="thirdtext">Google Street Panorama View</p>	
+	</div>
+		
+	<div class="rectangle">
+		<a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1sAF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736" target="_blank">
+		<img src="2/Rectangle (3).jpg" alt="Greek Hall" style="width: 440px; height: 285px">
+		</a>
+		<p class="text">GREEK HALL</p>
+		<p class="smallline"></p>
+		<p class="secondtext">360&deg Virtual Tour</p>
+		<p class="thirdtext">Google Street Panorama View</p>	
+	</div>
+		
+		<div class="rectangle">
+		<a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" target="_blank">
+		<img src="2/Rectangle (4).jpg" alt="Mona Lisa" style="width: 440px; height: 285px">
+		</a>
+		<p class="text">MONA LISA</p>
+		<p class="smallline"></p>
+		<p class="secondtext">360&deg Virtual Tour</p>
+		<p class="thirdtext">Google Street Panorama View</p>
+		</div>
+		
+	<div class="rectangle">
+	<a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1sAF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" target="_blank">
+	<img src="2/Rectangle (5).jpg"	alt="Night Palace" style="width: 440px; height: 285px">
+	</a>
+	<p class="text">NIGHT PALACE</p>
+	<p class="smallline"></p>
+	<p class="secondtext">360&deg Virtual Tour</p>
+	<p class="thirdtext">Google Street Panorama View</p>	
+	</div>
+		
+	</div>	
+</section>
+	
+	<a name="explore"></a>
+	<section class="blackpage">
+		<div class="pictureexplore">
+			PICTURE EXPLORE
+		<div class="pic"></div>
+		<p class="line"></p>
+			
+		<p>
+		<div class="paragraph">
+		Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
+		</div>
+		</p>
+		<p>
+		<div class="paragraph">
+			It was cleaned in 1984 to remove a <span style="color:#9d8665">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.
+		</div>
+		</p>
+		<p>
+		<div class="paragraph">
+		The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.
+		</div>
+		</p>
+	</div>
+	</section>
+
+	<a name="video"></a>
+	<section class="whitepage">
+		<div class="video">
+			<img src="4/Rectangle (1).jpg" width:1440px; alt="Photo Louvre">
+		<p>		
+			<span class="bigtext">VIDEO JOURNEY</span>
+			<span class="smalltext">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</span>
+		</p>
+		</div>
+	</section>
+	
+	<a name="tickets"></a>
+	<section class="blackpage">
+		<div class="tickets">
+		BUY TICKETS
+		<p class="mainline"></p>
+			
+			<img class="img" src="5/Rectangle (2).jpg" alt="Picture">
+			
+		<span class="typetickets">
+		<div class="textmiddle">
+			Ticket Type
+		<form>
+			<p class="textlittle">
+				<label class="radio">
+				<input type="radio" checked="checked" name="radio" value="Permanent exhibition" class="check">
+				Permanent exhibition	
+				</label>
+			</p>
+		<p class="textlittle">
+			<label class="radio">
+			<input type="radio" checked="checked" name="radio" value="Temporary exhibition" class="check">
+			Temporary exhibition
+			</label>
+		</p>	
+			<p class="textlittle">
+				<label class="radio">
+				<input type="radio" checked="checked" name="radio" value="Combined Admission" class="check">
+				Combined Admission
+				</label>
+			</p>
+		</form>	
+		</div>
+			</span>
+			
+		<span class="amount">
+			<div class="textmiddle">
+				Amount
+	<p class="textlittle">Basic 18+</p>
+				<p class="countersbox">				
+	<button type="button" onclick="this.nextElementSibling.stepDown()" class="click">-</button>
+				<input type="number" min="0" max="20" value="1" readonly class="number">
+	<button type="button" onclick="this.previousElementSibling.stepUp()" class="click">+</button>	
+				</p>
+				
+	<p class="textlittle">Senior 65+</p>
+				<p class="countersbox">
+	<button type="button" onclick="this.nextElementSibling.stepDown()" class="click">-</button>
+		<input type="number" name="number" min="0" max="20" value="1" readonly class="number">
+	<button type="button" onclick="this.previousElementSibling.stepUp()" class="click">+</button>			
+				</p>
+			<p>Total €220</p>	
+			</div>
+			</span>
+			
+		<p>
+	<button class="buytext">Buy Now</button>	
+		</p>
+		</div>
+	</section> 
+
+		<a name="contacts"></a>
+		<section class="whitepage">
+			<div class="contacts">
+				CONTACTS
+				<p class="mainline"></p>
+					<img class="map" src="6/Rectangle (3).jpg" alt="Map">
+				<div class="maintextcontacts">
+				Palais Royal<br>Musee du Louvre
+		<p class="smalltextcontacts">address: 75001 Paris, France</p>	
+		<p class="smalltextcontacts">phone: +33(0) 1 40 20 50 50</p>
+		<p class="smalltextcontacts">mail: info@louvre.fr</p>	
+				</div>
+			</div>
+		</section>	
+</main>
+	
+	<a name="bottom"></a>
+	<footer>
+		<div class="footerblack">
+			 <div class="footerpage">
+			<a href="#top" class="anchor">
+			<div class="logo">
+			<span><img src="1/Vector.svg" alt="Louvre Logo" style="width: 49px; height: 26px"></span>
+			<span>LOUVRE</span>
+			</div></a>
+			</div>
+			
+				<div class="footnav">
+			<span>
+				<a href="#welcome" class="anchor"><p>Welcome</p></a>
+				<a href="#visiting" class="anchor"><p>Visiting</p></a>
+				<a href="#explore" class="anchor"><p>Explore</p></a>
+			</span>
+			<span>
+				<a href="#video" class="anchor"><p>Video</p></a>
+				<a href="#tickets" class="anchor"><p>Tickets</p></a>
+				<a href="#contacts" class="anchor"><p>Contacts</p></a>
+			</span>
+				</div>
+		<div class="social">
+			<a href="https://www.youtube.com/user/louvre" title="youtube" target="_blank">
+		<span class="radius"><img src="7/Vector (1).svg" alt="youtube"></span>
+			</a>
+			<a href="https://www.instagram.com/museelouvre/" title="instagram" target="_blank">
+		<span class="radius"><img src="7/Vector (2).svg" alt="instagram"></span>
+			</a>
+			<a href="https://www.facebook.com/museedulouvre" title="facebook" target="_blank">
+		<span class="radius"><img src="7/Vector (3).svg" alt="facebook"></span>
+			</a>
+			<a href="http://twitter.com/museelouvre" title="twitter" target="_blank">
+		<span class="radius"><img src="7/Vector (4).svg" alt="twitter"></span>
+			</a>
+			<a href="https://www.pinterest.fr/museedulouvre/" title="pinterest" target="_blank">
+		<span class="radius"><img src="7/Vector (5).svg" alt="pinterest"></span>
+			</a>
+		</div>
+			
+		</div>
+	</footer>
+	
+</body>
+</html>
